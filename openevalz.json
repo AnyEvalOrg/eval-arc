@@ -1,0 +1,49 @@
+{
+  "openevalz_version": 1,
+  "eval": {
+    "id": "arc",
+    "slug": "arc",
+    "title": "ARC: AI2 Reasoning Challenge",
+    "group": "Reasoning",
+    "tags": [],
+    "source": "core"
+  },
+  "upstream": {
+    "repo": "https://github.com/UKGovernmentBEIS/inspect_evals",
+    "path": "src/inspect_evals/arc",
+    "inspect_ai": "0.3.260",
+    "eval_version": "2-A",
+    "dependency": ""
+  },
+  "execution": {
+    "class": "plain",
+    "cost_class": "medium",
+    "sandbox": null,
+    "requires_internet": false,
+    "fast": true,
+    "supports_k8s": false,
+    "environment": ""
+  },
+  "tasks": [
+    {
+      "name": "arc_easy",
+      "samples": 2376
+    },
+    {
+      "name": "arc_challenge",
+      "samples": 1172
+    }
+  ],
+  "total_samples": 3548,
+  "external_assets": [
+    {
+      "type": "huggingface",
+      "source": "allenai/ai2_arc",
+      "state": "pinned"
+    }
+  ],
+  "scaffolds": [
+    "baseline"
+  ],
+  "generated": "2026-08-25"
+}
